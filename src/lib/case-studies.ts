@@ -15,14 +15,18 @@ export const caseStudies: CaseStudy[] = [
     title: "Facilita Perú",
     tagline:
       "A government platform that let Peruvian citizens request official documents digitally during the pandemic.",
-    period: "2020–2021",
+    period: "2021–2023",
     role: "UX/UI Designer (with one partner)",
-    tags: ["Civic tech", "Service design", "Accessibility"],
+    tags: ["Civic tech", "Service design", "GovTech"],
     links: [
       { label: "Live platform", href: "https://guias.servicios.gob.pe/facilita" },
+      {
+        label: "UI case study (Webflow)",
+        href: "https://maria-jesus-design.webflow.io/facilita",
+      },
     ],
     confidentialityNote:
-      "Research artifacts remain with the government entity; findings are summarized from memory and anonymized.",
+      "Original research artifacts remain with the government entity. Findings below are summarized and anonymized; platform metrics are public program data.",
   },
   {
     slug: "ar-intelligence-platform",

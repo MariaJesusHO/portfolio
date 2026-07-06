@@ -2,8 +2,14 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { caseStudies, getCaseStudy } from "@/lib/case-studies";
 
+// Case studies with a dedicated page under case-studies/<slug>/ are
+// excluded here; this dynamic route only renders the placeholder template.
+const dedicatedPages = ["facilita-peru"];
+
 export function generateStaticParams() {
-  return caseStudies.map((cs) => ({ slug: cs.slug }));
+  return caseStudies
+    .filter((cs) => !dedicatedPages.includes(cs.slug))
+    .map((cs) => ({ slug: cs.slug }));
 }
 
 export async function generateMetadata({
