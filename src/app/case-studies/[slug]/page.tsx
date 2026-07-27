@@ -4,7 +4,7 @@ import { caseStudies, getCaseStudy } from "@/lib/case-studies";
 
 // Case studies with a dedicated page under case-studies/<slug>/ are
 // excluded here; this dynamic route only renders the placeholder template.
-const dedicatedPages = ["facilita-peru"];
+const dedicatedPages = ["facilita-peru", "refood"];
 
 export function generateStaticParams() {
   return caseStudies

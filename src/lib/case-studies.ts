@@ -46,13 +46,23 @@ export const caseStudies: CaseStudy[] = [
       "Personas and artifacts are synthesized composites; client details altered under confidentiality agreement.",
   },
   {
-    slug: "floral-ecommerce",
-    title: "Reimagining Floral E-commerce",
+    slug: "refood",
+    title: "ReFood Perú",
     tagline:
-      "A concept redesign for an industry whose digital storefronts have barely changed in a decade.",
-    period: "2026 — in progress",
-    role: "UX Engineer — end-to-end concept, design, and build",
-    tags: ["E-commerce", "Domain innovation", "Concept design"],
+      "A food-rescue platform connecting Lima's surplus meals with nearby consumers — before they're thrown away.",
+    period: "2026",
+    role: "UX Engineer — research, design system, and full-stack prototype",
+    tags: ["Social impact", "Behavior-change design", "Service design"],
+    links: [
+      {
+        label: "GitHub repository",
+        href: "https://github.com/MariaJesusHO/ReFood",
+      },
+      {
+        label: "Live demo",
+        href: "https://re-food-brown.vercel.app",
+      },
+    ],
   },
   {
     slug: "ai-ux-workflows",
