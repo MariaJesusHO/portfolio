@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Theme is driven by data-theme tokens below; body colors follow the tokens. */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* ---------------------------------------------------------------------------
+   Editorial template — design tokens (light + dark palettes)
+   Applied via data-theme on a section wrapper; used with bg-[var(--bg)] etc.
+--------------------------------------------------------------------------- */
+[data-theme="light"] {
+  --bg: #f5f2f8;
+  --surface: #ffffff;
+  --title: #35304a;
+  --ink: #38343f;
+  --muted: #6d6875;
+  --faint: #a8a2b0;
+  --line: #e7e1ee;
+  --accent: #7c6bb0;
+  --accent-soft: #ece8f7;
+  --on-accent: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg: #16121f;
+  --surface: #211b30;
+  --title: #efeaf7;
+  --ink: #d8d2e4;
+  --muted: #9d95ad;
+  --faint: #6b6380;
+  --line: #2f2842;
+  --accent: #b3a3e0;
+  --accent-soft: #2a2340;
+  --on-accent: #16121f;
+}
+
+/* Serif display headings take the title color in every theme */
+[data-theme] .font-serif {
+  color: var(--title);
+}
+
+/* Long-form case-study prose: emphasize inline strong/em against body text */
+.cs-body strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.cs-body em {
+  font-style: italic;
+}
+
+/* Break an element out of a centered/max-width parent to full viewport width */
+.bleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
 }

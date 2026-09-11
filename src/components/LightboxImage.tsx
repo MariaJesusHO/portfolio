@@ -35,7 +35,7 @@ export function LightboxImage({
     <>
       <figure>
         <div
-          className={`overflow-hidden rounded-xl border border-neutral-200 shadow-sm hover:shadow-md transition-shadow cursor-zoom-in ${containerClassName}`}
+          className={`overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] shadow-sm hover:shadow-md transition-shadow cursor-zoom-in ${containerClassName}`}
           onClick={() => setOpen(true)}
           role="button"
           tabIndex={0}
@@ -45,7 +45,7 @@ export function LightboxImage({
           <Image src={src} alt={alt} width={width} height={height} className="w-full h-auto" />
         </div>
         {caption && (
-          <figcaption className="mt-2 text-xs text-neutral-400 text-center">
+          <figcaption className="mt-2 text-xs text-[var(--faint)] text-center">
             {caption}
           </figcaption>
         )}

@@ -7,6 +7,8 @@ export type CaseStudy = {
   tags: string[];
   links?: { label: string; href: string }[];
   confidentialityNote?: string;
+  /** Case study written up but not yet published — shown as "Coming soon". */
+  wip?: boolean;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -36,6 +38,7 @@ export const caseStudies: CaseStudy[] = [
     period: "2025–2026",
     role: "UX Engineer — research, design system, and React implementation",
     tags: ["Fintech", "Design systems", "React/TypeScript"],
+    wip: true,
     links: [
       {
         label: "GitHub repository",
@@ -63,6 +66,8 @@ export const caseStudies: CaseStudy[] = [
         href: "https://re-food-brown.vercel.app",
       },
     ],
+    confidentialityNote:
+      "Academic prototype developed for the course Diseño y Tecnologías UX, Systems Engineering, Universidad Peruana de Ciencias Aplicadas (UPC), 2026-1. No real transactions; all backend data is simulated.",
   },
   {
     slug: "ai-ux-workflows",
@@ -72,6 +77,7 @@ export const caseStudies: CaseStudy[] = [
     period: "2025–2026",
     role: "Creator — workflow design and implementation",
     tags: ["AI + design process", "Developer experience", "Research ops"],
+    wip: true,
     links: [
       {
         label: "UX Engineering Flow",
