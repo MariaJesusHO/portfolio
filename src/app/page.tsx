@@ -77,7 +77,8 @@ export default function Home() {
       <section className="border-t border-[var(--line)] bg-[var(--surface)]">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-20 sm:flex-row sm:items-end sm:justify-between">
           <h2 className="max-w-xl font-serif text-3xl leading-tight tracking-tight sm:text-4xl">
-            Currently open to work at the intersection of design and systems.
+            Interested in HCI, AI, and UX engineering — always open to a good
+            conversation or collaboration.
           </h2>
           <div className="flex flex-wrap gap-4 text-sm">
             <Link

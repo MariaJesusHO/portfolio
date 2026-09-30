@@ -16,7 +16,7 @@ const glance: [string, string][] = [
   ["Based in", "Peru"],
   ["In UX since", "2018"],
   ["Studying", "Systems Engineering (expected 2027)"],
-  ["Status", "Open to work"],
+  ["Open to", "Collaborations & good conversations"],
 ];
 
 export default function About() {
@@ -33,22 +33,22 @@ export default function About() {
         {/* Main column */}
         <div className="space-y-6 text-[var(--muted)] leading-relaxed">
           <p>
-            I am a Senior UX Designer based in Peru, working in UX since 2018, and
-            currently finishing a second degree in Systems Engineering (expected
-            end of 2027).
+            I&apos;m a Senior UX Designer based in Peru, currently finishing a
+            second degree in Systems Engineering. Over time, I became
+            increasingly curious about what happens behind the interface — how
+            systems are built, how technical decisions shape the experience, and
+            what changes when AI becomes part of the product. Today my work spans
+            research, product design, prototyping, and implementation. I like
+            moving from ambiguity to something concrete, then testing whether it
+            actually works.
           </p>
           <p>
-            My work sits at the intersection of human-centered design and software
-            architecture: design systems, AI-assisted workflows, and complex
-            enterprise products that need to remain understandable and trustworthy
-            for the people who use them.
-          </p>
-          <p>
-            I care about making high-stakes tools usable for the people who depend
-            on them — and about closing the gap between how a product is designed
-            and how it is actually built. That is the reason I moved from
-            designing interfaces toward the systems layer where trust and
-            usability are decided.
+            I&apos;m especially interested in HCI, human-centered AI, and the
+            relationship between people and increasingly complex technology. I
+            like understanding how things work — not just using the method,
+            framework, or formula, but getting to the point where the “why” makes
+            sense. I&apos;m still a designer at heart, but increasingly drawn to
+            the systems underneath the experience.
           </p>
 
           {/* Focus areas */}
@@ -68,6 +68,19 @@ export default function About() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Outside work */}
+          <div className="pt-6">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--faint)]">
+              Outside work
+            </p>
+            <p className="mt-6">
+              I run, play tennis, and take far too many photos — and I usually
+              have at least one completely unnecessary research rabbit hole open.
+              I love travelling slowly, getting to know different cultures, and
+              rarely pass up a museum.
+            </p>
           </div>
 
           {/* Connect */}
