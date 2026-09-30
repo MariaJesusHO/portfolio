@@ -69,24 +69,6 @@ export const caseStudies: CaseStudy[] = [
     confidentialityNote:
       "Academic prototype developed for the course Diseño y Tecnologías UX, Systems Engineering, Universidad Peruana de Ciencias Aplicadas (UPC), 2026-1. No real transactions; all backend data is simulated.",
   },
-  {
-    slug: "ai-ux-workflows",
-    title: "AI-Assisted UX Workflows",
-    tagline:
-      "Tools and processes that keep AI-generated UI human-centered: context intake, component governance, and research operations.",
-    period: "2025–2026",
-    role: "Creator — workflow design and implementation",
-    tags: ["AI + design process", "Developer experience", "Research ops"],
-    wip: true,
-    links: [
-      {
-        label: "UX Engineering Flow",
-        href: "https://github.com/MariaJesusHO/ai-ux-engineering",
-      },
-    ],
-    confidentialityNote:
-      "The research hub is populated with synthetic data; methods and structure mirror real practice.",
-  },
 ];
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {

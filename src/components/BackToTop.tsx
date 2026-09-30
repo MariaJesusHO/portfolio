@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 /**
  * Floating button that appears after scrolling past the first viewport and
  * smooth-scrolls back to the top. Site-wide, useful on long case studies and
- * the writings archive.
+ * research articles.
  */
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);

@@ -4,15 +4,24 @@ import { caseStudies } from "@/lib/case-studies";
 import { SoonBadge } from "@/components/case-study";
 
 export const metadata: Metadata = {
-  title: "Case studies",
+  title: "Work",
+  description:
+    "Selected UX engineering case studies — civic tech, fintech, and social-impact products.",
 };
 
 export default function CaseStudiesIndex() {
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
-      <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">
-        Case studies
+      <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--faint)]">
+        Work
+      </p>
+      <h1 className="mt-6 font-serif text-4xl tracking-tight sm:text-5xl">
+        Selected case studies
       </h1>
+      <p className="mt-6 max-w-2xl text-lg text-[var(--muted)]">
+        End-to-end product work — research, design systems, and shipped
+        implementation across civic tech, fintech, and social impact.
+      </p>
       <ul className="mt-12 divide-y divide-[var(--line)] border-t border-[var(--line)]">
         {caseStudies.map((cs, i) => (
           <li key={cs.slug}>

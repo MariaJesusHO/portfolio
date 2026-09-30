@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Private working notes (personal strategy, confidential references)
-docs/
+# Anchored to the repo root so public/docs assets are still tracked.
+/docs/

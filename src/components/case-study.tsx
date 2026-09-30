@@ -31,7 +31,7 @@ export function CaseHero({
           href="/case-studies"
           className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--ink)]"
         >
-          ← Case studies
+          ← Work
         </Link>
 
         <h1 className="mt-8 max-w-4xl font-serif text-4xl leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">

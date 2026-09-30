@@ -58,10 +58,13 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-6 text-sm text-[var(--muted)]">
               <Link href="/case-studies" className="hover:text-[var(--ink)]">
-                Case studies
+                Work
               </Link>
-              <Link href="/writings" className="hover:text-[var(--ink)]">
-                Writings
+              <Link href="/research" className="hover:text-[var(--ink)]">
+                Research &amp; Writing
+              </Link>
+              <Link href="/experiments" className="hover:text-[var(--ink)]">
+                Tools / Experiments
               </Link>
               <Link href="/about" className="hover:text-[var(--ink)]">
                 About
